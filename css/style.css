@@ -1,0 +1,185 @@
+:root {
+  --primary-color: #2a2d74;
+  --secondary-color: #e6f3f7;
+  --text-color: ##000000;
+  --text-color-2: #fff;
+  --lighter-color: #555790;
+  --darker-color: #15173a;
+  --border-radius: 2rem;
+  --shadow: 2px 8px 12px rgba(0, 0, 0, 0.4);
+  --main-transition: 1s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.container {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Breakpoints  */
+/* mobile  */
+/* @media (max-width: 576px) {
+  .container {
+    width: 558px;
+    display: none;
+  }
+} */
+
+/* Small */
+/* @media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+} */
+
+/* Medium  */
+/* @media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+} */
+
+/* Large */
+/* @media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+} */
+
+body {
+  font-family: "Cairo", sans-serif;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+/* start contactus */
+.contactus {
+  /* padding: 2rem; */
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.contactus .cover {
+  width: 100%;
+}
+.contactus .container {
+  max-width: 500px;
+}
+.contactus .profile {
+  max-width: 20rem;
+  position: absolute;
+  top: 16%;
+  left: 30%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transform: translate(0%, 0%);
+  box-shadow: var(--shadow);
+}
+@media (max-width: 450px) {
+  .contactus .profile {
+    top: 14%;
+    left: 27%;
+  }
+  .contactus .contacus-info .heading {
+    margin-top: 12rem;
+  }
+}
+.contactus .contacus-info {
+  padding: 2rem 2rem;
+  margin-top: 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactus .contacus-info .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 6rem;
+}
+.contactus .contacus-info .heading img {
+  width: 4rem;
+}
+.contactus .contacus-info .heading h2 {
+  font-size: 5rem;
+  font-weight: 500;
+  color: var(--darker-color);
+  margin-bottom: 2rem;
+}
+.contactus .contacus-info p {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--darker-color);
+}
+.contactus .container .contactus-link ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  gap: 3rem;
+  margin: auto;
+  padding: 0%;
+}
+.contactus .container .contactus-link a:last-child {
+  margin-bottom: 4rem;
+}
+.contactus .container .contactus-link li {
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3rem;
+  background-color: var(--lighter-color);
+  width: 90%;
+  padding: 2rem 4rem;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 1s ease-in-out;
+  box-shadow: var(--shadow);
+}
+.contactus .container .contactus-link a:hover li {
+  background-color: var(--primary-color);
+}
+.contactus .container .contactus-link a:hover img {
+  transform: scale(1.5);
+  transition: var(--main-transition);
+}
+.contactus .container .contactus-link a {
+  color: var(--text-color-2);
+  text-decoration: none;
+}
+.contactus .container .contactus-link ul {
+  list-style: none;
+  margin: auto;
+}
+.contactus .container .contactus-link img {
+  width: 5rem;
+  margin-left: 3rem;
+}
+
+@media (max-width: 375px) {
+  .contactus .profile {
+    top: 10%;
+    left: 24%;
+  }
+  .contactus .contacus-info .heading {
+    margin-top: 12rem;
+    line-height: 1.4;
+  }
+}
+/* end contactus */
